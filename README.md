@@ -1,6 +1,8 @@
 # PID Control System Simulation
 
-A lightweight Python simulation of a **Proportional-Integral-Derivative (PID)** controller driving a first-order dynamic system, complete with discrete-time numerical safeguards and Matplotlib plotting centered around the target threshold.
+A lightweight Python simulation of a **Proportional-Integral-Derivative (PID)** controller driving a first-order dynamic system, complete with discrete-time numerical safeguards and Matplotlib plotting centered around the target threshold. 
+
+Graphs how a system responds to each of the control gains to match a pre-set threshold value. 
 
 ## Features
 
