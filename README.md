@@ -4,6 +4,9 @@ A lightweight Python simulation of a **Proportional-Integral-Derivative (PID)** 
 
 Graphs how a system responds to each of the control gains to match a pre-set threshold value. 
 
+``
+$P = K_p \cdot e(t)$
+
 ## Features
 
 * **Discrete PID Controller (`PIDController`)**: Computes proportional (`P`), integral (`I`), and derivative (`D`) control effort each time step.
@@ -11,9 +14,6 @@ Graphs how a system responds to each of the control gains to match a pre-set thr
 * **Centered Threshold Visualization**: Automatically sets symmetric y-axis limits around `THRESHOLD` so the target line sits in the middle of the plot.
 * **Config-Driven Gains & Initial State**: Reads setpoint, initial value, and PID gains from `configs.py`.
 
-## Project Structure
+## Setting up the best responses
 
-```text
-.
-├── configs.py      # Simulation constants and PID gain parameters (required)
-└── simulate.py     # PIDController class, simulation loop, and plot output
+
