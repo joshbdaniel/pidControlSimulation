@@ -34,12 +34,11 @@ total_time = 10.0
 dt = 0.05 
 time = np.arange(0, total_time, dt)
 
-setpoint = 50.0 
-current_value = 0.0 
-
-Kp = 2.0
-Ki = 5.0
-Kd = 0.1
+setpoint = 10.0 
+current_value = 0
+Kp = 1.0
+Ki = 0.0
+Kd = 0.5
 
 pid = PIDController(Kp, Ki, Kd, setpoint)
 
@@ -49,7 +48,6 @@ setpoint_values = []
 
 system_time_constant = 0.6
 
-# --- Run Simulation Loop ---
 for t in time:
   control_effort = pid.update(current_value, dt)
 
@@ -80,4 +78,5 @@ plt.ylabel("System Value", fontsize=11)
 plt.grid(True, linestyle=":", alpha=0.6)
 plt.legend(fontsize=11)
 plt.tight_layout()
+plt.ylim(setpoint -5, setpoint + 5)
 plt.show()
