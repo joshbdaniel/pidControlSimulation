@@ -4,8 +4,9 @@ A lightweight Python simulation of a **Proportional-Integral-Derivative (PID)** 
 
 Graphs how a system responds to each of the control gains to match a pre-set threshold value. 
 
-``
 $P = K_p \cdot e(t)$
+$I = K_i \int e\,dt$
+$D = K_d \frac{de}{dt}$
 
 ## Features
 
@@ -14,6 +15,7 @@ $P = K_p \cdot e(t)$
 * **Centered Threshold Visualization**: Automatically sets symmetric y-axis limits around `THRESHOLD` so the target line sits in the middle of the plot.
 * **Config-Driven Gains & Initial State**: Reads setpoint, initial value, and PID gains from `configs.py`.
 
-## Setting up the best responses
+<img width="748" height="418" alt="image" src="https://github.com/user-attachments/assets/5d8a5d13-8c88-42b8-ade1-cfe3c9365027" />
 
+<img width="748" height="419" alt="image" src="https://github.com/user-attachments/assets/6d7af5cb-425e-4a8e-b7ce-54e57c4a0e47" />
 
